@@ -1,0 +1,48 @@
+header {
+  padding: 50px;
+  background-color: #F8F8FF;
+  color: black;
+}
+
+header ul {
+  position: absolute;
+  right: 10px;
+  padding: 10px;
+}
+
+header ul li {
+  list-display: none;
+  display: inline-block;
+  list-style-type: none;
+}
+
+header .image-cropper {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+header .image-cropper img {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
+.sidebar ul {
+  margin-top: 70px;
+  box-shadow: inset 0 0 0 0 #54b3d6;
+  color: #54b3d6;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.sidebar ul li:hover {
+  list-style-type: none;
+  padding-bottom: 10px;
+  box-shadow: inset 100px 0 0 0 #54b3d6;
+  color: white;
+}
