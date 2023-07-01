@@ -1,3 +1,13 @@
+body {
+  font-family: 'sofia', sans-serif;
+  text-shadow: 3px 3px 3px #ababab;
+}
+
+h1 {
+  font-family: Cinzel, serif;
+  font-size: 32px;
+}
+
 header {
   padding: 50px;
   background-color: #F8F8FF;
@@ -31,18 +41,47 @@ header .image-cropper img {
   width: auto;
 }
 
+.sidebar {
+  position: absolute;
+  padding-top: 20px;
+  top: 0;
+  bottom: 0;
+  width: 200px;
+}
+
 .sidebar ul {
-  margin-top: 70px;
-  box-shadow: inset 0 0 0 0 #54b3d6;
-  color: #54b3d6;
-  margin: 0 -.25rem;
-  padding: 0 .25rem;
-  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  list-style: none;
+  margin-top: 150px;
+  width: 200px;
+  height: 100%;
 }
 
 .sidebar ul li:hover {
-  list-style-type: none;
   padding-bottom: 10px;
   box-shadow: inset 100px 0 0 0 #54b3d6;
-  color: white;
+  display: flex;
+  color: inherit;
+  text-decoration: inherit;
+  all: unset;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 200px;
+}
+
+.section {
+  margin: 50px 0px 50px 50px;
+}
+
+.section ul {
+  list-style: none;
+  font-family: 'Fauna One', serif;
+}
+
+.section div {
+  width: 100%;
+  text-align: justify;
 }
