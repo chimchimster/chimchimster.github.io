@@ -1,8 +1,9 @@
 body {
-  font-family: 'sofia', sans-serif;
+  font-family: 'Garamond', sans-serif;
   text-shadow: 3px 3px 3px #ababab;
   margin: 0;
   padding: 0;
+  font-size: 20px;
 }
 
 h1 {
@@ -62,8 +63,13 @@ header .image-cropper img {
 
 .sidebar {
   width: 200px;
+  font-size: 1vw;
   background-color: #F8F8FF;
   animation: slide-in 0.5s ease-in-out;
+  position: sticky;
+  top: 50px;
+  height: calc(100vh - 50px);
+  overflow-y: auto;
 }
 
 .sidebar ul {
@@ -101,6 +107,7 @@ header .image-cropper img {
 .content {
   padding: 50px;
   animation: fade-in 0.5s ease-in-out;
+  width: 1300px;
 }
 
 @keyframes fade-in {
@@ -188,18 +195,9 @@ header .image-cropper img {
 }
 
 ul.languages-and-tools {
-  display: flex;
-  flex-wrap: wrap;
   padding: 0;
   margin: 0;
   list-style: none;
-}
-
-ul.languages-and-tools li {
-  display: flex;
-  align-items: center;
-  margin-right: 10px;
-  animation: fade-in 0.5s ease-in-out;
 }
 
 .footer {
@@ -217,4 +215,83 @@ ul.languages-and-tools li {
 
 .footer a:hover {
   color: #333;
+}
+
+li .responsibilities-inner-decimal {
+  list-style-type: decimal;
+  margin-left: 60px;
+  margin-top: 20px;
+  padding-top: 10px;
+}
+
+li .responsibilities-inner-square {
+  font-size: 18px;
+  list-style-type: square;
+  margin-left: 30px
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+summary {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s ease-in-out;
+}
+
+summary::before {
+  content: '\25BC';
+  position: absolute;
+  right: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+summary:focus {
+  outline: none;
+}
+
+summary:hover {
+  background-color: #eee;
+}
+
+summary:hover::before {
+  transform: rotate(90deg);
+}
+
+.languages-and-tools li {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.languages-and-tools li:hover {
+  transform: scale(1.05);
+}
+
+.languages-and-tools li .description {
+  margin-left: 10px;
+  opacity: 1;
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1);
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+a:focus {
+  outline: none;
+}
+
+a:active {
+  color: #003b80;
 }
