@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 body {
   font-family: 'Garamond', sans-serif;
   text-shadow: 3px 3px 3px #ababab;
@@ -35,8 +37,8 @@ header ul li {
 }
 
 header .image-cropper {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   overflow: hidden;
   animation: rotate 3s linear infinite;
@@ -48,12 +50,24 @@ header .image-cropper img {
   object-fit: cover;
 }
 
+.resume-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 20px;
+}
+
 @keyframes rotate {
   0% {
-    transform: rotate(0deg);
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
   }
   100% {
-    transform: rotate(360deg);
+    transform: scale(1);
   }
 }
 
@@ -107,7 +121,7 @@ header .image-cropper img {
 .content {
   padding: 50px;
   animation: fade-in 0.5s ease-in-out;
-  width: 1300px;
+  width: 1700px;
 }
 
 @keyframes fade-in {
@@ -294,4 +308,96 @@ a:focus {
 
 a:active {
   color: #003b80;
+}
+
+.contact-me {
+  margin-top: 20px;
+  animation: slide-in 0.5s ease-in-out;
+}
+
+.contact-me a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  align: center;
+}
+
+.contact-me a:hover {
+  background-color: #555;
+}
+
+.section-about, .section-about-right {
+  width: 500px;
+  background-color: #F8F8FF;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.section-about h1, .section-about-right h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.section-about p, .section-about-right p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.animated-heading {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  animation: fadeInDown 1s ease-in-out;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.animated-text {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #666;
+  animation: fadeInUp 1s ease-in-out;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-about,
+.section-about-right {
+  flex-basis: 47%;
+
 }
