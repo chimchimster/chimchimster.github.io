@@ -16,8 +16,8 @@ h1 {
 
 header {
   padding: 50px;
-  background-color: #F8F8FF;
-  color: black;
+  background: linear-gradient(135deg, #FFFAFA 40%, #E0FFFF 100%);
+  color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -34,20 +34,47 @@ header ul li {
   margin-right: 10px;
   font-weight: bold;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-header .image-cropper {
-  width: 150px;
-  height: 150px;
+header ul li:hover {
+  transform: scale(1.1);
+}
+
+.resume-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+
+.image-cropper {
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   overflow: hidden;
   animation: rotate 3s linear infinite;
+  position: relative;
 }
 
-header .image-cropper img {
+.image-cropper img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .resume-title {
@@ -78,7 +105,7 @@ header .image-cropper img {
 .sidebar {
   width: 200px;
   font-size: 1vw;
-  background-color: #F8F8FF;
+  background-color: white;
   animation: slide-in 0.5s ease-in-out;
   position: sticky;
   top: 50px;
@@ -400,4 +427,13 @@ a:active {
 .section-about-right {
   flex-basis: 47%;
 
+}
+
+footer {
+  height: 50px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
 }

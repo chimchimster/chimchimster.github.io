@@ -11,14 +11,14 @@
 </head>
 <body>
     <header>
+        <div class="image-cropper">
+            <img src="static/imgs/resume_image.jpeg">
+        </div>
+        <h1 class="resume-title">Интерактивное резюме</h1>
         <ul>
             <li class="font-effect-fire">EN</li>
             <li>RU</li>
         </ul>
-        <h1 class="resume-title">Интерактивное резюме</h1>
-        <div class="image-cropper">
-            <img src="static/imgs/resume_image.jpeg">
-        </div>
     </header>
     <div class="main">
         <div class="sidebar">
@@ -34,11 +34,11 @@
         <div class="content">
             <div class="section-wrapper">
                 <div class="section-about">
-                    <h1 class="animated-heading">Обо мне</h1>
+                    <h1 style="justify-content: center; display: flex;" class="animated-heading">Обо мне</h1>
                     <p class="animated-text">Привет! Меня зовут Артем Касьян, и я пайтон бэкэнд разработчик. Сейчас я работаю в компании iMAS. Это мое интерактивное резюме, в котором я представил множество проектов, которыми занимался. В резюме я также описал свою деятельность, используемые технологии, а также информацию об учебе и курсах. Я всегда стремлюсь к развитию и открыт для новых вызовов в мире разработки.</p>
                 </div>
                 <div class="section-about-right">
-                    <h1 class="animated-heading">Что я ищу?</h1>
+                    <h1 style="justify-content: center; display: flex;" class="animated-heading">Что я ищу?</h1>
                     <p class="animated-text">Я активно ищу команду веб-разработки, которая обладает сильным техлидом и тимлидом. Мне важно, чтобы в компании были качественно прописанные технические задачи и интересный стек технологий, с которым я мог бы познакомиться. Я стремлюсь найти компанию, где все процессы организованы четко и команда работает слаженно.</p>
                 </div>
             </div>
@@ -219,6 +219,20 @@
                     </li>
                 </ul>
             </div>
+            <div class="section-wrapper">
+                <div class="section-about">
+                    <h1 style="justify-content: center; display: flex;" class="animated-heading">Статистика leetcode</h1>
+                     <div class="image-container">
+                         <img src="https://leetcard.jacoblin.cool/chimchimster?theme=default">
+                     </div>
+                </div>
+                <div class="section-about-right">
+                    <h1 style="justify-content: center; display: flex;" class="animated-heading">Статистика GitHub</h1>
+                     <div class="image-container">
+                        <img src="https://streak-stats.demolab.com/?user=chimchimster&theme=default">
+                     </div>
+                </div>
+            </div>
             <div class="section">
                 <h1>Образование и курсы</h1>
                 <details>
@@ -373,12 +387,6 @@
             </details>
             </div>
             <div class="section">
-                <!-- Languages and Technologies -->
-            </div>
-            <div class="section">
-                <!-- Social Media and LeetCode Link -->
-            </div>
-            <div class="section">
                 <details>
                 <summary>Мои пет-проекты</summary>
                 <ul class="inner">
@@ -423,7 +431,6 @@
                 </ul>
                 </details>
             </div>
-        </div>
     </div>
 
     <footer class="footer">
